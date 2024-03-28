@@ -5,9 +5,9 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'pisco-toromata.s3.us-east-2.amazonaws.com',
+                hostname: 's3.us-west-1.amazonaws.com',
                 port: '',
-                pathname: '/**',
+                pathname: '/dallinromney.com/**',
             },
         ],
     },

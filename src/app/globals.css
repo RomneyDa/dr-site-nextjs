@@ -96,6 +96,9 @@
     body {
         @apply bg-background text-foreground;
     }
+    html {
+        scroll-behavior: smooth !important;
+    }
 
     /* https://www.whatfontis.com/?s3 */
     /* https://www.onlinewebfonts.com/download/9a6bf33692cf94359f80f4941450fd3c */
@@ -134,3 +137,49 @@
 .legend {
     display: none;
 }
+
+/* GEARS */
+.gear-view {
+    background-color: transparent !important;
+}
+.gear-cross {
+    display: inline;
+}
+.gear-hole {
+    display: inline !important;
+    fill: transparent !important;
+    r: 5px !important;
+    stroke: black !important;
+    stroke-width: 1px !important;
+}
+.gear-profile {
+    fill: #111111 !important;
+    stroke: #828282 !important;
+    stroke-width: 1px !important;
+}
+.gear-first-tooth-marker {
+    fill: #f20000 !important;
+    /* stroke: ;
+    stroke-width: ; */
+}
+/* .gear-guides {
+    display: inline;
+} */
+/* .gear-guide-pitch {
+    stroke: ;
+    stroke-width: ;
+}
+.gear-guide-outer {
+    stroke: ;
+    stroke-width: ;
+}
+.gear-guide-base {
+    stroke: ;
+    stroke-width: ;
+} */
+.gear-text-container {
+    display: none;
+}
+/* .gear-text {
+    stroke: ;
+} */

@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DESCRIPTION, TITLE } from "./content";
 
 export const metadata: Metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
+  title: "Dallin Romney",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-auto dark">
+    <html lang="en" className="dark no-scrollbar">
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -23,7 +22,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#121621" />
         <meta name="theme-color" content="#121621" />
       </head>
-      <body className="overflow-auto flex max-h-screen min-w-[375px] font-toro">{children}</body>
+      <body className="flex min-w-[375px] font-toro">{children}</body>
     </html>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "pisco-toromata",
+  "name": "dr-site-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dromney/gear-gen": "^0.2.8",
+    "@dromney/react-gear-gen": "^0.1.18",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-popover": "^1.0.7",
+    "@radix-ui/react-switch": "^1.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.363.0",

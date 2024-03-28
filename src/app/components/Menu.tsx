@@ -6,18 +6,15 @@ import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from "@/components/ui/popover"
-
-// future: login? <Link onClick={hideMenu} target="_blank" href={BREEEW_LINK} className="font-semibold text-md hover:text-muted-foreground">Log in</Link> 
+} from "./ui/popover"
 
 const Menu = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const hideMenu = () => setShowMenu(false);
 
     const Links = () => <>
-        <Link href="#the-story" className="nav-link">Nuestro Historia</Link>
-        <Link href="#the-tours" className="nav-link">Tours</Link>
-        <Link onClick={hideMenu} href="#the-product" className="p-2 bg-primary text-primary-foreground px-7 border-border rounded-full flex flex-row gap-2 hover:bg-accent hover:text-accent-foreground transition-all ring-accent hover:ring-[5px]">Comprar</Link>
+        <Link href="#portfolio" className="nav-link">Portfolio</Link>
+        <Link href="#work-with-me" className="nav-link">Work with Me</Link>
+        {/* <Link onClick={hideMenu} href="#the-product" className="p-2 bg-primary text-primary-foreground px-7 border-border rounded-full flex flex-row gap-2 hover:bg-accent hover:text-accent-foreground transition-all ring-accent hover:ring-[5px]">Comprar</Link> */}
     </>
 
     return (

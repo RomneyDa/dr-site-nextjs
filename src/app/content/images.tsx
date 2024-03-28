@@ -17,89 +17,16 @@ export const S3Image = ({ src, ...srcProps }: ImageSrcProps) => function S3Img(p
     )
 }
 
+export const WorldMap = S3Image({
+    src: 'world-map.jpg',
+    alt: 'Background',
+    width: 2560,
+    height: 1600
+})
+
 export const Bottles1 = S3Image({
-    src: 'bottles-1.jpeg',
+    src: 'portfolio.jpeg',
     alt: 'Bottles',
     width: 1179,
     height: 1143
 })
-
-export const Bottles2 = S3Image({
-    src: 'bottles-2.jpeg',
-    alt: 'Bottles',
-    width: 1179,
-    height: 1168
-})
-
-export const Bottles3 = S3Image({
-    src: 'bottles-3.jpeg',
-    alt: 'Bottles',
-    width: 1179,
-    height: 1165
-})
-
-export const TechnicalDetails = S3Image({
-    src: 'ficha-tecnica.png',
-    alt: 'Ficha Tecnica',
-    width: 1179,
-    height: 1465
-})
-
-export const Friends = S3Image({
-    src: 'friends.png',
-    alt: 'Friends',
-    width: 888,
-    height: 1024
-})
-
-export const Grapes1 = S3Image({
-    src: 'grapes-1.png',
-    alt: 'Grapes',
-    width: 1200,
-    height: 1600
-})
-
-export const Grapes2 = S3Image({
-    src: 'grapes-2.png',
-    alt: 'Grapes',
-    width: 1200,
-    height: 1600
-})
-
-export const Grapes3 = S3Image({
-    src: 'grapes-3.png',
-    alt: 'Grapes',
-    width: 1200,
-    height: 1600
-})
-
-export const Logo = S3Image({
-    src: 'logo.png',
-    alt: 'Logo',
-    width: 392,
-    height: 392
-})
-
-export const LogoFull = S3Image({
-    src: 'logo-full.png',
-    alt: 'Logo',
-    width: 1179,
-    height: 1344
-})
-
-export const ProductBlack = S3Image({
-    src: 'product-black.png',
-    alt: 'Pisco Toromata',
-    width: 1179,
-    height: 648
-})
-
-export const ProductRed = S3Image({
-    src: 'product-red.png',
-    alt: 'Pisco Toromata',
-    width: 1179,
-    height: 1092
-})
-
-// export const S3Image = ({ src, ...props }: S3ImageProps) => <Image {...props} src={s3ImageUrl(src)} />
-// export const Bottles1 = () => <S3Image src='bottles-1.jpeg' alt='bottles' width={1179} height={1143} />

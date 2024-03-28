@@ -1,9 +1,8 @@
+"use client"
 import React, { Component, ReactNode } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { Bottles1, Bottles2, Bottles3 } from '../content/images';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { Grapes10, Grapes11, Grapes12, Grapes13, Grapes5, Grapes6, Grapes7, Grapes8, Grapes9 } from '../content/videos';
 
 const CarouselItem = ({ children }: { children: ReactNode }) => {
     return (
@@ -52,30 +51,6 @@ const TourCarousel = () => {
 
             }}
         >
-            <CarouselItem>
-                <Grapes5 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes6 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes7 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes8 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes9 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes10 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes11 className='object-center object-cover' />
-            </CarouselItem>
-            <CarouselItem>
-                <Grapes12 className='object-center object-cover' />
-            </CarouselItem>
             {/* <CarouselItem>
                 <Grapes13 className='object-center object-cover' />
             </CarouselItem> */}
