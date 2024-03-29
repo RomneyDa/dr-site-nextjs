@@ -40,7 +40,7 @@ const PortfolioItem = ({ title, description, image, link }: PortfolioItemProps) 
         <Link
             target='_blank'
             href={link}
-            className="w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 transition-all duration-500 cursor-pointer">
+            className="w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 hover:ring-2 ring-ring transition-all duration-500 cursor-pointer">
             <img src={s3FileUrl(image)} alt={title} className="object-cover w-full h-full" />
             <div className="p-4 absolute bottom-0 left-0 w-full max-h-1/2 bg-background/85">
                 <h3 className="text-lg font-bold">{title}</h3>
@@ -52,7 +52,7 @@ const PortfolioItem = ({ title, description, image, link }: PortfolioItemProps) 
 }
 const Portoflio = () => {
     return (
-        <div className="w-[90%] max-w-[350px] sm:max-w-[800px] grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="w-[90%] max-w-[350px] sm:max-w-[800px] grid grid-cols-1 sm:grid-cols-2 gap-8">
             {PORTFOLIO_ITEMS.map((item, index) => (
                 <PortfolioItem key={index} {...item} />
             ))}

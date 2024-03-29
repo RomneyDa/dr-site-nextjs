@@ -25,7 +25,7 @@ const Home = async () => {
           </div>
         </section> */}
         <section id="portfolio" className="pt-16 flex flex-col gap-8 items-center">
-          <h1 className="text-4xl">Examples</h1>
+          <h1 className="text-4xl select-none">Examples</h1>
           <Portoflio />
           {/* <ProductBlack className="w-full h-[500px] rounded-xl object-contain" />
           <ProductRed className="w-full h-[500px] rounded-xl object-contain" />
@@ -35,9 +35,9 @@ const Home = async () => {
           <Bottles3 /> */}
         </section>
         <section id="work-with-me" className="pt-16 px-5 sm:px-12 flex flex-col items-center">
-          <h1 className="text-4xl my-8">Work with me</h1>
+          <h1 className="text-4xl my-8 select-none">Work with me</h1>
           {/* <p className="mt-4 mb-8 font-sans">We make our shit yummy</p> */}
-          <Link target="_blank" href={CONTACT_LINK} className="mb-8 font-sans font-black p-2 bg-primary text-primary-foreground px-7 border-border rounded-full flex flex-row gap-2 hover:bg-accent hover:text-accent-foreground transition-all ring-accent hover:ring-[5px]">Contact</Link>
+          <Link target="_blank" href={CONTACT_LINK} className="select-none mb-8 font-sans font-black p-2 bg-primary text-primary-foreground px-7 border-border rounded-full flex flex-row gap-2 hover:bg-accent hover:text-accent-foreground transition-all ring-accent hover:ring-[5px]">Contact</Link>
 
           {/* <Typewriter words={["TOURS"]} typeSpeed={100} /> */}
           {/* <div className="block rounded-2xl"> */}
