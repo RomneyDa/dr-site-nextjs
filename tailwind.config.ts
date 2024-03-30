@@ -22,7 +22,7 @@ const config = {
     extend: {
       fontFamily: {
         // toro: ["Ashbury-ExtraLight", ...fontFamily.sans],
-        toro: ["Ashbury-ExtraLight"],
+        // toro: ["Ashbury-ExtraLight"],
       },
       colors: {
         border: "hsl(var(--border))",

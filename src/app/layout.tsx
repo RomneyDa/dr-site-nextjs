@@ -22,7 +22,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#121621" />
         <meta name="theme-color" content="#121621" />
       </head>
-      <body className="flex min-w-[375px] font-toro">{children}</body>
+      <body className="flex min-w-[375px]">{children}</body>
     </html>
   );
 }

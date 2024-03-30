@@ -1,6 +1,5 @@
 "use server"
 import Link from "next/link";
-import TourCarousel from "./components/TourCarousel";
 import { CONTACT_LINK } from "./content";
 import Header from "./components/Header";
 import IntroSection from "./components/IntroSection";
@@ -41,7 +40,6 @@ const Home = async () => {
 
           {/* <Typewriter words={["TOURS"]} typeSpeed={100} /> */}
           {/* <div className="block rounded-2xl"> */}
-          <TourCarousel />
           {/* </div> */}
         </section>
         <footer className="flex-1 flex flex-row px-6 py-2 w-full justify-center gap-7 items-center">

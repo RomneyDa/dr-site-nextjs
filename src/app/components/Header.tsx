@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Menu from './Menu';
 import Gears from './Gears';
 import { ChevronUp } from 'lucide-react';
-import { Label } from "./ui/label"
 import { Switch } from "./ui/switch"
 import { WorldMap } from '../content/images';
 
@@ -78,7 +77,7 @@ const Header = () => {
                     }}
                 >
                     {/* <Image src="/android-chrome-192x192.png" width={50} height={50} alt="Logo" className="rounded-full" /> */}
-                    <h1 className="font-semibold text-2xl transition-all duration-300 hover:scale-105">Dallin Romney</h1>
+                    <h1 className="text-2xl transition-all duration-300 hover:scale-105">Dallin Romney</h1>
                 </div>
                 <Menu />
             </header>

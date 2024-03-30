@@ -102,7 +102,7 @@
 
     /* https://www.whatfontis.com/?s3 */
     /* https://www.onlinewebfonts.com/download/9a6bf33692cf94359f80f4941450fd3c */
-    @font-face {
+    /* @font-face {
         font-family: "Ashbury-ExtraLight";
         src: url("https://db.onlinewebfonts.com/t/9a6bf33692cf94359f80f4941450fd3c.eot");
         src: url("https://db.onlinewebfonts.com/t/9a6bf33692cf94359f80f4941450fd3c.eot?#iefix")
@@ -115,7 +115,7 @@
                 format("truetype"),
             url("https://db.onlinewebfonts.com/t/9a6bf33692cf94359f80f4941450fd3c.svg#Ashbury-ExtraLight")
                 format("svg");
-    }
+    } */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
