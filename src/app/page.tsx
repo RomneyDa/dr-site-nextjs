@@ -4,7 +4,7 @@ import { CONTACT_LINK } from "./content";
 import Header from "./components/Header";
 import IntroSection from "./components/IntroSection";
 import Footer from "./components/Footer";
-import Portoflio from "./components/Portoflio";
+import Portfolio from "./components/Portfolio";
 
 const Home = async () => {
   return (
@@ -25,7 +25,7 @@ const Home = async () => {
         </section> */}
         <section id="portfolio" className="pt-16 flex flex-col gap-8 items-center">
           <h1 className="text-4xl select-none">Examples</h1>
-          <Portoflio />
+          <Portfolio />
           {/* <ProductBlack className="w-full h-[500px] rounded-xl object-contain" />
           <ProductRed className="w-full h-[500px] rounded-xl object-contain" />
           <TechnicalDetails className="w-full h-[500px] rounded-xl object-contain" /> */}

@@ -5,6 +5,7 @@ import Gears from './Gears';
 import { ChevronUp, SettingsIcon } from 'lucide-react';
 import { Switch } from "./ui/switch"
 import { WorldMap } from '../content/images';
+import { Slider } from './ui/slider';
 
 interface ScrollData {
     previous: number
@@ -59,6 +60,8 @@ const Header = () => {
         }
     }, [])
 
+    const [speed, setSpeed] = useState(0.5)
+
     return (
         <>
             <header className={`px-5 py-3 sm:py-4 bg-background fixed left-0 top-0 flex items-center w-full justify-between z-50`}
@@ -83,7 +86,7 @@ const Header = () => {
             </header>
             <div className="fixed h-screen w-screen z-0 opacity-20">
                 {showGears ?
-                    <Gears rot={scrollData.current / 1.5} />
+                    <Gears rot={scrollData.current} sensitivity={speed} />
                     : <WorldMap className="h-full object-cover" />
                 }
             </div>
@@ -97,11 +100,14 @@ const Header = () => {
             >
                 <ChevronUp height={22} width={22} strokeWidth={3} color="hsl(var(--primary))" />
             </div>
-            <div className="z-50 fixed bottom-4 left-4 rounded-full bg-black p-1 flex flex-row items-center justify-center gap-2">
-                <SettingsIcon size={20} />
-                <Switch id="gears-or-background" checked={showGears} onCheckedChange={setShowGears} />
+            <div className="z-50 fixed bottom-4 left-4 rounded-full bg-black p-1 flex flex-col justify-center gap-4">
+                {showGears && <Slider defaultValue={[speed]} value={[speed]} onValueChange={(vals) => setSpeed(vals[0])} step={0.02} min={0.1} max={1} className="" />}
+                <div className='flex flex-row items-center gap-2'>
+                    <SettingsIcon size={20} />
+                    <Switch id="gears-or-background" checked={showGears} onCheckedChange={setShowGears} />
+                </div>
                 {/* <Label className="text-xs opacity-70" htmlFor="airplane-mode">Gears</Label> */}
-            </div>
+            </div >
         </>
     )
 }

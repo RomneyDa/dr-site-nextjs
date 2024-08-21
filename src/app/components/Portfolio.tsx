@@ -21,7 +21,7 @@ const PortfolioItem = ({ title, description, image, link }: PortfolioItemProps) 
 }
 const Portoflio = () => {
     return (
-        <div className="w-[90%] max-w-[350px] sm:max-w-[800px] grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="w-[90%] max-w-[350px] sm:max-w-[800px] lg:max-w-[1100px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {PORTFOLIO_ITEMS.map((item, index) => (
                 <PortfolioItem key={index} {...item} />
             ))}

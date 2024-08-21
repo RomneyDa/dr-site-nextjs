@@ -6,7 +6,12 @@ import { TheGears } from './gearSet';
 
 const throttleMs = 25;
 
-function Gears({ rot }: { rot: number }) {
+export interface GearsProps {
+    rot: number
+    sensitivity?: number
+}
+
+function Gears({ rot, sensitivity = 1 }: GearsProps) {
     const [gearSet, setGearSet] = useState<GearSet>()
     const [mousePos, setMousePos] = useState(0);
     useEffect(() => {
@@ -32,7 +37,7 @@ function Gears({ rot }: { rot: number }) {
     }, [])
 
     if (!gearSet) return null
-    return <PositionedGearSetViewer rot={rot + mousePos} gearSet={gearSet} showGrid={false} padding={3} />
+    return <PositionedGearSetViewer rot={rot + mousePos * sensitivity} gearSet={gearSet} showGrid={false} padding={3} />
 }
 
 export default Gears
