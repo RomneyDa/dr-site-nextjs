@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Menu from './Menu';
 import Gears from './Gears';
-import { ChevronUp } from 'lucide-react';
+import { ChevronUp, SettingsIcon } from 'lucide-react';
 import { Switch } from "./ui/switch"
 import { WorldMap } from '../content/images';
 
@@ -97,7 +97,8 @@ const Header = () => {
             >
                 <ChevronUp height={22} width={22} strokeWidth={3} color="hsl(var(--primary))" />
             </div>
-            <div className="z-50 fixed bottom-6 left-6 rounded-full flex flex-row items-center justify-center gap-3">
+            <div className="z-50 fixed bottom-4 left-4 rounded-full bg-black p-1 flex flex-row items-center justify-center gap-2">
+                <SettingsIcon size={20} />
                 <Switch id="gears-or-background" checked={showGears} onCheckedChange={setShowGears} />
                 {/* <Label className="text-xs opacity-70" htmlFor="airplane-mode">Gears</Label> */}
             </div>

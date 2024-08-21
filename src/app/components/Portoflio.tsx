@@ -1,41 +1,9 @@
 "use client"
 import React from 'react'
-import { s3FileUrl } from '../content'
+import { PORTFOLIO_ITEMS, PortfolioItemProps, s3FileUrl } from '../content'
 import Link from 'next/link'
 import Image from 'next/image'
-interface PortfolioItemProps {
-    title: string
-    description: string
-    image: string
-    link: string
-}
 
-const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
-    {
-        title: "MapThis.AI",
-        description: "AI map generation tools to auto-generate, edit, and serve maps from web content",
-        image: "portfolio/mapthis.png",
-        link: "https://mapthis.ai"
-    },
-    {
-        title: "Gear Generation",
-        description: "Dynamic, animatable spur gear/gear set svg generation packages (used on this site)",
-        image: "portfolio/gears.png",
-        link: "https://github.com/RomneyDa/react-gear-gen"
-    },
-    {
-        title: "rpgGPT",
-        description: "Frontend for text-based AI role-playing game built around OpenAI. Company raised 250k+",
-        image: "portfolio/rpggpt.png",
-        link: "https://rpg-gpt.com"
-    },
-    {
-        title: "Popchew",
-        description: "Online ordering system and mobile application for virtual food brand platform. Typescript, React Native iOS/Android, Python, Animations, AWS, Analytics",
-        image: "portfolio/popchew.png",
-        link: "https://popchew.com"
-    }
-]
 const PortfolioItem = ({ title, description, image, link }: PortfolioItemProps) => {
     return (
         <Link
