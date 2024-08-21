@@ -44,7 +44,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
 
     {
         title: "rpgGPT",
-        description: "Frontend for text-based AI role-playing game built around OpenAI. Company raised 250k+",
+        description: "Frontend for text-based AI role-playing game built around OpenAI. Company raised significant funding round from demo",
         image: "portfolio/rpggpt.png",
         link: "https://rpg-gpt.com"
     },
