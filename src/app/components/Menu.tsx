@@ -7,22 +7,35 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "./ui/popover"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
+import { Button } from './ui/button';
 
 const Menu = () => {
-    const [showMenu, setShowMenu] = useState(false);
-
-    const Links = () => <>
-        <Link href="#portfolio" className="nav-link">Portfolio</Link>
-        <Link href="#work-with-me" className="nav-link">Work with Me</Link>
-        {/* <Link onClick={hideMenu} href="#the-product" className="p-2 bg-primary text-primary-foreground px-7 border-border rounded-full flex flex-row gap-2 hover:bg-accent hover:text-accent-foreground transition-all ring-accent hover:ring-[5px]">Comprar</Link> */}
-    </>
+    const [open, setOpen] = useState(false);
 
     return (
         <nav>
-            <div className="px-4 hidden lg:flex flex-row items-center gap-6">
-                <Links />
+            <div className="px-4 hidden sm:flex flex-row items-center gap-6">
+                <Link href="#portfolio" className="nav-link">Portfolio</Link>
+                <Link href="#work-with-me" className="nav-link">Work with Me</Link>
             </div>
-            <Popover open={showMenu} onOpenChange={setShowMenu}>
+            <DropdownMenu open={open} onOpenChange={setOpen} >
+                <DropdownMenuTrigger asChild>
+                    <Button variant="outline" size="icon" className='sm:hidden'>
+                        <MenuIcon className='h-[1.2rem] w-[1.2rem]' strokeWidth={2} />
+                        <span className="sr-only">Menu</span>
+                    </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                    <DropdownMenuItem onClick={() => setOpen(false)} >
+                        <Link href="#portfolio" className="nav-link">Portfolio</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => setOpen(false)}>
+                        <Link href="#work-with-me" className="nav-link">Work with Me</Link>
+                    </DropdownMenuItem>
+                </DropdownMenuContent>
+            </DropdownMenu>
+            {/* <Popover open={showMenu} onOpenChange={setShowMenu}>
                 <PopoverTrigger
                     asChild
                     className="lg:hidden cursor-pointer text-foreground"
@@ -35,7 +48,7 @@ const Menu = () => {
                 <PopoverContent className="flex flex-col gap-5 p-7 mr-2 items-end w-[175px]" onClick={() => setShowMenu(false)}>
                     <Links />
                 </PopoverContent>
-            </Popover>
+            </Popover> */}
         </nav>
     )
 }

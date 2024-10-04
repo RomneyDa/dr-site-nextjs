@@ -25,7 +25,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     },
     {
         title: "OutbackFriends.com",
-        description: "Social network of friends that help each other out",
+        description: "Social network of friends that help each other with tasks",
         image: "portfolio/outback-friends.png",
         link: "https://outbackfriends.com"
     },
@@ -37,14 +37,14 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     },
     {
         title: "Gear Generation",
-        description: "Dynamic, animatable spur gear/gear set svg generation packages (used on this site)",
+        description: "Dynamic, animatable spur gear/gear set svg generation packages",
         image: "portfolio/gears.png",
         link: "https://github.com/RomneyDa/react-gear-gen"
     },
 
     {
-        title: "rpgGPT",
-        description: "Frontend for text-based AI role-playing game built around OpenAI. Company raised significant funding round from demo",
+        title: "rpg-gpt.com",
+        description: "Frontend for text-based AI role-playing game built around OpenAI",
         image: "portfolio/rpggpt.png",
         link: "https://rpg-gpt.com"
     },

@@ -9,7 +9,8 @@ const PortfolioItem = ({ title, description, image, link }: PortfolioItemProps) 
         <Link
             target='_blank'
             href={link}
-            className="w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 hover:ring-2 ring-ring transition-all duration-500 cursor-pointer">
+            className="w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 border hover:ring-2 ring-ring transition-all duration-500 cursor-pointer"
+        >
             <Image width={350} height={250} src={s3FileUrl(image)} alt={title} className="object-cover w-full h-full" />
             <div className="p-4 absolute bottom-0 left-0 w-full max-h-1/2 bg-background/85">
                 <h3 className="text-lg font-bold">{title}</h3>

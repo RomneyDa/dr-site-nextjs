@@ -34,7 +34,13 @@
 
         --radius: 0.5rem;
     }
-
+    .light {
+        .gear-profile {
+            fill: white !important;
+            stroke: #7f7f7f !important;
+            stroke-width: 1px !important;
+        }
+    }
     .dark {
         --background: 20 14.3% 4.1%;
         --foreground: 60 9.1% 97.8%;
@@ -63,6 +69,12 @@
         --border: 12 6.5% 15.1%;
         --input: 12 6.5% 15.1%;
         --ring: 24 5.7% 82.9%;
+
+        .gear-profile {
+            fill: var(--background) !important;
+            stroke: #828282 !important;
+            stroke-width: 1px !important;
+        }
     }
 
     /* NAV LINK MOVING UNDERLINE */
@@ -152,11 +164,7 @@
     stroke: black !important;
     stroke-width: 1px !important;
 }
-.gear-profile {
-    fill: #111111 !important;
-    stroke: #828282 !important;
-    stroke-width: 1px !important;
-}
+
 .gear-first-tooth-marker {
     fill: #f20000 !important;
     /* stroke: ;

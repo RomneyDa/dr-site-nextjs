@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "./components/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Dallin Romney",
@@ -12,6 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en" className="dark no-scrollbar">
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -22,7 +24,16 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#121621" />
         <meta name="theme-color" content="#121621" />
       </head>
-      <body className="flex min-w-[375px]">{children}</body>
+      <body className="flex min-w-[375px]">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
