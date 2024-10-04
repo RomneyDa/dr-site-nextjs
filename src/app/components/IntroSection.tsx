@@ -29,8 +29,8 @@ const IntroSection = () => {
     return (
         <section id="intro" className="flex flex-col h-screen items-center justify-center">
             {/* <div className="h-full -mt-8 px-3 sm:px-12  text-center flex items-center justify-center gap-10 flex-row flex-wrap z-10"> */}
-            <div className="text-4xl mx-auto text-center rounded-lg">
-                <div className="p-2 bg-background/70 font-semibold">
+            <div className="text-4xl mx-auto text-center rounded-lg flex flex-col items-center justify-center">
+                <div className="p-2 font-semibold">
                     <Typewriter
                         delaySpeed={10}
                         words={["Hi, I'm Dallin"]}
