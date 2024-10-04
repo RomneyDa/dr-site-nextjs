@@ -72,7 +72,7 @@
 
         .gear-profile {
             fill: var(--background) !important;
-            stroke: #828282 !important;
+            stroke: #c2c2c2 !important;
             stroke-width: 1px !important;
         }
     }
