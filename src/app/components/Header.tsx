@@ -4,7 +4,6 @@ import Menu from './Menu';
 import Gears from './Gears';
 import { ChevronLeftIcon, ChevronUp, GaugeIcon, SettingsIcon } from 'lucide-react';
 import { Switch } from "./ui/switch"
-import { WorldMap } from '../content/images';
 import { Slider } from './ui/slider';
 import { ModeToggle } from './DarkLightToggle';
 import { Label } from './ui/label';
