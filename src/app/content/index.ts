@@ -16,15 +16,23 @@ export interface PortfolioItemProps {
   description: string;
   image: string;
   link: string;
+  subtitle?: string;
+  highlights?: string[];
 }
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   {
     title: "Continue.dev",
     description:
-      "The leading open-source AI Coding Assistant for VS Code and Jetbrains",
+      "The leading open-source AI coding assistant with 31k+ GitHub stars",
     image: "continue_agent.gif",
     link: "https://continue.dev",
+    highlights: [
+      "2,500+ commits across core, GUI, CLI, and IDE extensions",
+      "Built agentic coding tools: Edit, Create, Grep, Glob, and LS",
+      "Owned the CLI product — OAuth, headless mode, and agent support",
+      "Shipped MCP Apps and maintained 10+ LLM provider integrations",
+    ],
   },
   {
     title: "MapThis.AI",
@@ -35,7 +43,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   },
   {
     title: "OutbackFriends.com",
-    description: "Social network of friends that help each other with tasks",
+    description: "Social platform for the outback community",
     image: "outback_friends.webp",
     link: "https://outbackfriends.com",
   },
@@ -56,7 +64,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   {
     title: "rpg-gpt.com",
     description:
-      "Frontend for text-based AI role-playing game built around OpenAI",
+      "Text-based AI role-playing game built around OpenAI",
     image: "rpg_gpt.webp",
     link: "https://rpg-gpt.com",
   },

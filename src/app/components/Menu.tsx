@@ -17,7 +17,7 @@ const Menu = () => {
         <nav>
             <div className="px-4 hidden sm:flex flex-row items-center gap-6">
                 <Link href="#portfolio" className="nav-link">Portfolio</Link>
-                <Link href="#work-with-me" className="nav-link">Work with Me</Link>
+                <Link href="#work-with-me" className="nav-link">Contact</Link>
             </div>
             <DropdownMenu open={open} onOpenChange={setOpen} >
                 <DropdownMenuTrigger asChild>
@@ -31,7 +31,7 @@ const Menu = () => {
                         <Link href="#portfolio" className="nav-link">Portfolio</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setOpen(false)}>
-                        <Link href="#work-with-me" className="nav-link">Work with Me</Link>
+                        <Link href="#work-with-me" className="nav-link">Contact</Link>
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>

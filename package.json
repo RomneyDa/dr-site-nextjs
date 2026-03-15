@@ -30,6 +30,9 @@
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
   },
+  "overrides": {
+    "gear-gen": "npm:@dromney/gear-gen@^0.2.8"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",

@@ -20,7 +20,7 @@ const Home = async () => {
           <Portfolio />
         </section>
         <section id="work-with-me" className="pt-16 pb-8 px-5 sm:px-12 flex flex-col items-center">
-          <h1 className="text-4xl my-8 select-none">Work with me</h1>
+          <h1 className="text-4xl my-8 select-none">Contact</h1>
           {/* <p className="mt-4 mb-8 font-sans">We make our shit yummy</p> */}
           <div className="flex flex-row gap-4 p-2 bg-background/70">
             <Link

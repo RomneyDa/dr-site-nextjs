@@ -9,12 +9,15 @@ const PortfolioItem = ({
   description,
   image,
   link,
+  subtitle,
+  highlights,
 }: PortfolioItemProps) => {
   return (
     <Link
       target="_blank"
       href={link}
-      className="w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 border hover:ring-2 ring-ring transition-all duration-500 cursor-pointer"
+      className="group w-full aspect-[1.2] relative overflow-hidden rounded-2xl bg-background hover:scale-105 border hover:ring-2 ring-ring transition-all duration-500 cursor-pointer"
+      title={highlights?.map((h) => `\u2022 ${h}`).join("\n")}
     >
       <Image
         width={350}
@@ -22,9 +25,15 @@ const PortfolioItem = ({
         src={`/portfolio/${image}`}
         alt={title}
         className="object-cover w-full h-full"
+        unoptimized={image.endsWith(".gif")}
       />
       <div className="p-4 absolute bottom-0 left-0 w-full max-h-1/2 bg-background/85">
         <h3 className="text-lg font-bold">{title}</h3>
+        {subtitle && (
+          <p className="text-sm font-medium text-muted-foreground">
+            {subtitle}
+          </p>
+        )}
         <p>{description}</p>
       </div>
     </Link>
